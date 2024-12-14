@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: url('Images/aboutmain.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 80px 0;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .service-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .service-card .card-body {
+            text-align: center;
+        }
+        .service-card h5 {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .service-card p {
+            font-size: 1rem;
+        }
+        .feature-list li {
+            font-size: 1.1rem;
+            padding-left: 20px;
+            position: relative;
+        }
+        .feature-list li::before {
+            content: '\2022';
+            color: #007bff;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .cta-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bank Management System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="account.html">Accounts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section text-center text-white">
+        <h1>Welcome to the Bank Management System</h1>
+        <p class="lead">Your secure, efficient, and easy-to-use platform for managing your bank accounts.</p>
+    </div>
+
+    <!-- About Us Content -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Our Bank Services</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Savings Accounts</h5>
+                        <p class="card-text">Secure accounts with competitive interest rates to help you save for the future.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Current Accounts</h5>
+                        <p class="card-text">Perfect for daily banking, providing easy access to funds with debit cards and online banking.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Loan Management</h5>
+                        <p class="card-text">Track and manage personal and business loans with detailed reports.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Transaction History</h5>
+                        <p class="card-text">View all your transactions, including deposits, withdrawals, and transfers, in real-time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center mt-5">Security Features</h2>
+        <ul class="feature-list">
+            <li><strong>Two-Factor Authentication (2FA):</strong> Adds an extra layer of security for account access.</li>
+            <li><strong>Secure Payment Gateways:</strong> Safe and encrypted payment methods for online transactions.</li>
+            <li><strong>Data Encryption:</strong> Ensuring the security of your personal and financial information.</li>
+        </ul>
+
+        <h2 class="text-center mt-5">Why Choose Our System?</h2>
+        <ul class="feature-list">
+            <li>Manage multiple bank accounts effortlessly.</li>
+            <li>Track balances and transactions in real-time.</li>
+            <li>Get detailed reports on your financial activities.</li>
+            <li>Enjoy a seamless online banking experience anywhere, anytime.</li>
+        </ul>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+        <h2>Get Started Today!</h2>
+        <p>Sign up now and start managing your bank accounts with ease and security.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
